@@ -1,276 +1,489 @@
 <!DOCTYPE html>
 <html lang="uz">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yoshlar innovatsion loyihalari reyestri</title>
 
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Yoshlar innovatsion loyihalari reyestri</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        rel="stylesheet"
+    >
+
 </head>
-<body class="bg-light text-dark">
 
-  <!-- NAVBAR / HEADER -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-3">
-    <div class="container-fluid px-3 px-md-4">
-      <a class="navbar-brand fw-bold d-flex align-items-center gap-2 fs-4" href="#">
-        <i class="bi bi-c-circle-fill text-dark fs-3"></i> Reyestr
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </nav>
 
-  <!-- HERO SECTION -->
-  <section class="p-4 p-md-5 text-white" style="background-color: #0d7a82;">
-    <div class="container-fluid">
-      <h1 class="fw-bold mb-3 fs-2">Yoshlar innovatsion loyihalari reyestri</h1>
-      <p class="text-white-50 fs-6 mb-4">
-        Respublika bo‘ylab yosh jamoalar ilgari surgan g‘oyalar, prototiplar va bozorga chiqqan mahsulotlar bazasi.
-      </p>
+<body class="bg-light">
 
-      <!-- STATS -->
-      <div class="d-flex align-items-stretch mb-4 ps-3 border-start border-warning border-4">
-        <div>
-          <div class="display-5 fw-bold text-white lh-1">142</div>
-          <div class="text-white-50 small mt-1">ta loyiha ro‘yxatga olingan</div>
+
+
+    <header class="bg-white">
+
+        <div class="container">
+
+            <h2 class="py-3">
+                <i class="bi bi-c-circle-fill"></i>
+                Reyesstr
+            </h2>
+
         </div>
-      </div>
+
+    </header>
 
 
 
-      <!-- SEARCH INPUT & BUTTON -->
-      <div class="bg-white p-2 rounded shadow-sm">
-        <div class="input-group">
-          <span class="input-group-text bg-transparent border-0 text-secondary">
-            <i class="bi bi-search"></i>
-          </span>
-          <input type="text" id="searchInput" class="form-control border-0 shadow-none text-secondary" placeholder="Nom yoki kalit so‘z bo‘yicha qidiring">
+
+    <section class="bg-primary text-white py-5">
+
+        <div class="container">
+
+            <h1 class="fw-bold">
+                Yoshlar innovatsion loyihalari reyestri
+            </h1>
+
+            <p>
+                Respublika bo‘ylab yosh jamoalar ilgari surgan
+                g‘oyalar, prototiplar va mahsulotlar bazasi.
+            </p>
+
+
+
+            <div class="border-start border-warning border-4 ps-3 my-4">
+
+                <h2>142</h2>
+
+                <p>
+                    ta loyiha ro‘yxatga olingan
+                </p>
+
+            </div>
+
+
+
+
+            <div class="bg-white p-3 rounded">
+
+                <div class="input-group">
+
+                    <span class="input-group-text">
+                        <i class="bi bi-search"></i>
+                    </span>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        class="form-control"
+                        placeholder="Loyiha qidiring"
+                    >
+
+                </div>
+
+
+                <button
+                    id="searchBtn"
+                    class="btn btn-dark w-100 mt-2"
+                >
+                    Qidirish
+                </button>
+
+            </div>
+
         </div>
-        <button id="searchBtn" class="btn w-100 fw-medium text-white mt-2 py-2" style="background-color: #0b6066;">
-          Qidirish
+
+    </section>
+
+
+
+
+    <main class="container py-4">
+
+
+
+        <div class="mb-4">
+
+            <button class="btn btn-outline-secondary">
+                Filtrlar
+            </button>
+
+            <span class="badge bg-info">
+                Sun'iy intellekt
+            </span>
+
+            <span class="badge bg-secondary">
+                Prototip
+            </span>
+
+        </div>
+
+
+
+
+        <h3>
+
+            18
+
+            <small class="text-muted">
+                ta loyiha topildi
+            </small>
+
+        </h3>
+
+
+
+
+        <select class="form-select mb-4">
+
+            <option>
+                Avval yangilari
+            </option>
+
+            <option>
+                Avval eskilari
+            </option>
+
+        </select>
+
+
+
+
+        <div id="projectList">
+
+
+
+            <div class="card mb-3">
+
+                <div class="card-body">
+
+                    <p class="text-primary fw-bold">
+                        IN-2026-041
+                    </p>
+
+                    <span class="badge bg-info">
+                        Sun'iy intellekt
+                    </span>
+
+                    <h4>
+                        Paxta zararkunandalarini rasm orqali aniqlash
+                    </h4>
+
+                    <p class="text-muted">
+                        Jamoa: AgroVision · TATU Farg‘ona filiali
+                    </p>
+
+                    <p>
+                        Dehqon telefonda barg rasmini oladi.
+                        Model zararkunandalarni aniqlaydi.
+                    </p>
+
+                    <span class="badge bg-light text-dark">
+                        Kompyuter ko‘rish
+                    </span>
+
+                    <span class="badge bg-light text-dark">
+                        Mobil
+                    </span>
+
+                    <p class="mt-3">
+                        Farg‘ona
+                    </p>
+
+                    <span class="badge bg-info">
+                        Prototip
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="card mb-3">
+
+                <div class="card-body">
+
+                    <p class="text-primary fw-bold">
+                        IN-2026-038
+                    </p>
+
+                    <span class="badge bg-info">
+                        Energetika
+                    </span>
+
+                    <h4>
+                        Quyosh panellarini tozalovchi avtonom robot
+                    </h4>
+
+                    <p class="text-muted">
+                        Jamoa: Helios Lab · Toshkent davlat texnika universiteti
+                    </p>
+
+                    <p>
+                        Robot quyosh panellaridagi changlarni
+                        avtomatik tozalaydi.
+                    </p>
+
+                    <span class="badge bg-light text-dark">
+                        Robototexnika
+                    </span>
+
+                    <span class="badge bg-light text-dark">
+                        IoT
+                    </span>
+
+                    <p class="mt-3">
+                        Toshkent
+                    </p>
+
+                    <span class="badge bg-info">
+                        Prototip
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="card mb-3">
+
+                <div class="card-body">
+
+                    <p class="text-primary fw-bold">
+                        IN-2026-033
+                    </p>
+
+                    <span class="badge bg-info">
+                        Sun'iy intellekt
+                    </span>
+
+                    <h4>
+                        O‘zbek tili uchun ovozdan matnga o‘girish xizmati
+                    </h4>
+
+                    <p class="text-muted">
+                        Jamoa: Ovoz.uz · Mustaqil jamoa
+                    </p>
+
+                    <p>
+                        Ovozli ma'lumotlarni matnga aylantiradi.
+                    </p>
+
+                    <span class="badge bg-light text-dark">
+                        NLP
+                    </span>
+
+                    <span class="badge bg-light text-dark">
+                        API
+                    </span>
+
+                    <p class="mt-3">
+                        Toshkent
+                    </p>
+
+                    <span class="badge bg-success">
+                        Bozorda
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="card mb-3">
+
+                <div class="card-body">
+
+                    <p class="text-primary fw-bold">
+                        IN-2026-029
+                    </p>
+
+                    <span class="badge bg-info">
+                        Energetika
+                    </span>
+
+                    <h4>
+                        Uy sharoitida biogaz olish uchun kompakt qurilma
+                    </h4>
+
+                    <p class="text-muted">
+                        Jamoa: BioKub · Samarqand davlat universiteti
+                    </p>
+
+                    <p>
+                        Oshxona chiqindilaridan biogaz ishlab chiqaradi.
+                    </p>
+
+                    <span class="badge bg-light text-dark">
+                        Biogaz
+                    </span>
+
+                    <span class="badge bg-light text-dark">
+                        Qishloq
+                    </span>
+
+                    <p class="mt-3">
+                        Samarqand
+                    </p>
+
+                    <span class="badge bg-warning text-dark">
+                        G‘oya
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="card mb-3">
+
+                <div class="card-body">
+
+                    <p class="text-primary fw-bold">
+                        IN-2026-024
+                    </p>
+
+                    <span class="badge bg-info">
+                        Ta'lim
+                    </span>
+
+                    <h4>
+                        Maktab kimyo laboratoriyasi uchun VR modul
+                    </h4>
+
+                    <p class="text-muted">
+                        Jamoa: LabVR · Namangan innovatsiya markazi
+                    </p>
+
+                    <p>
+                        Maktab o‘quvchilari tajribalarni virtual bajaradi.
+                    </p>
+
+                    <span class="badge bg-light text-dark">
+                        VR
+                    </span>
+
+                    <span class="badge bg-light text-dark">
+                        Maktab
+                    </span>
+
+                    <p class="mt-3">
+                        Namangan
+                    </p>
+
+                    <span class="badge bg-info">
+                        Prototip
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="card mb-3">
+
+                <div class="card-body">
+
+                    <p class="text-primary fw-bold">
+                        IN-2026-019
+                    </p>
+
+                    <span class="badge bg-info">
+                        Agrotexnologiya
+                    </span>
+
+                    <h4>
+                        Issiqxona mikroiqlimini nazorat qiluvchi tizim
+                    </h4>
+
+                    <p class="text-muted">
+                        Jamoa: GreenNode · Andijon qishloq xo‘jaligi instituti
+                    </p>
+
+                    <p>
+                        Namlik va haroratni o‘lchab,
+                        shamollatishni avtomatik boshqaradi.
+                    </p>
+
+                    <span class="badge bg-light text-dark">
+                        IoT
+                    </span>
+
+                    <span class="badge bg-light text-dark">
+                        Sensor
+                    </span>
+
+                    <p class="mt-3">
+                        Andijon
+                    </p>
+
+                    <span class="badge bg-success">
+                        Bozorda
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <button
+            id="moreBtn"
+            class="btn btn-outline-secondary w-100 mt-3"
+        >
+            Yana 12 ta loyihani ko‘rsatish
         </button>
-      </div>
-    </div>
-  </section>
 
-  <!-- MAIN CONTENT -->
-  <main class="container-fluid px-3 px-md-4 py-4">
-    
-    <!-- FILTERS (Taglar) -->
-    <div class="d-flex flex-wrap gap-2 mb-3">
-      <button class="btn btn-outline-secondary btn-sm bg-white text-dark fw-medium border px-3">
-        Filtrlar (3)
-      </button>
-      <span class="badge bg-white text-secondary border fw-normal p-2 d-flex align-items-center gap-1">
-        Sun'iy intellekt <i class="bi bi-x fs-6"></i>
-      </span>
-      <span class="badge bg-white text-secondary border fw-normal p-2 d-flex align-items-center gap-1">
-        Prototip <i class="bi bi-x fs-6"></i>
-      </span>
-    </div>
 
-    <!-- COUNT & SORT -->
-    <div class="mb-4">
-      <div class="fw-bold fs-6 mb-2">18 <span class="fw-normal text-muted">ta loyiha topildi</span></div>
-      <select class="form-select border-secondary-subtle bg-white">
-        <option selected>Avval yangilari</option>
-        <option value="1">Avval eskilari</option>
-      </select>
-    </div>
+    </main>
 
-    <!-- CARDS LIST -->
-    <div class="d-flex flex-column gap-3">
 
-      <!-- Card 1 -->
-      <div class="card border-0 shadow-sm rounded-3">
-        <div class="card-body p-3">
-          <div class="d-flex justify-content-between align-items-center mb-2">
-            <span class="text-primary fw-bold small">IN-2026-041</span>
-            <i class="bi bi-star-fill text-warning fs-5"></i>
-          </div>
-          <span class="badge bg-info-subtle text-info-emphasis mb-2 fw-medium">Sun'iy intellekt</span>
-          <h5 class="card-title fw-bold fs-5 mb-2">Paxta zararkunandalarini rasm orqali aniqlash</h5>
-          <p class="card-text text-muted small mb-2">
-            Jamoa: AgroVision · TATU Farg‘ona filiali
-          </p>
-          <p class="card-text text-secondary small mb-3">
-            Dehqon telefonda barg rasmini oladi, model 14 turdagi zararkunandani aniqlaydi va ishlov berish miqdorini hisoblab beradi. Dala sinovlarida aniqlik 91% ga yetdi.
-          </p>
-          <div class="d-flex flex-wrap gap-1 mb-3">
-            <span class="border rounded px-2 py-1 bg-light text-secondary small">Kompyuter ko‘rish</span>
-            <span class="border rounded px-2 py-1 bg-light text-secondary small">Mobil</span>
-            <span class="border rounded px-2 py-1 bg-light text-secondary small">Offline</span>
-          </div>
-          <div class="d-flex justify-content-between align-items-center pt-2 border-top text-muted small">
-            <span>Farg‘ona</span>
-            <span class="badge bg-info-subtle text-info-emphasis border border-info-subtle">Prototip</span>
-          </div>
+
+
+    <footer class="bg-dark text-white py-4">
+
+        <div class="container">
+
+            <p>
+                Reyesstr · Yoshlar innovatsion loyihalari bazasi
+            </p>
+
+            <p>
+                Ma'lumotlar 2026-yil 1-sentyabr holatiga
+            </p>
+
         </div>
-      </div>
 
-      <!-- Card 2 -->
-      <div class="card border-0 shadow-sm rounded-3">
-        <div class="card-body p-3">
-          <div class="d-flex justify-content-between align-items-center mb-2">
-            <span class="text-primary fw-bold small">IN-2026-038</span>
-            <i class="bi bi-star text-muted fs-5"></i>
-          </div>
-          <span class="badge bg-info-subtle text-info-emphasis mb-2 fw-medium">Energetika</span>
-          <h5 class="card-title fw-bold fs-5 mb-2">Quyosh panellarini tozalovchi avtonom robot</h5>
-          <p class="card-text text-muted small mb-2">
-            Jamoa: Helios Lab · Toshkent davlat texnika universiteti
-          </p>
-          <p class="card-text text-secondary small mb-3">
-            Suvsiz quruq tozalash tizimi panel yuzasidagi chang qatlamini kechasi olib tashlaydi. Sinov maydonchasida quvvat 12% ga oshdi.
-          </p>
-          <div class="d-flex flex-wrap gap-1 mb-3">
-            <span class="border rounded px-2 py-1 bg-light text-secondary small">Robototexnika</span>
-            <span class="border rounded px-2 py-1 bg-light text-secondary small">IoT</span>
-          </div>
-          <div class="d-flex justify-content-between align-items-center pt-2 border-top text-muted small">
-            <span>Toshkent</span>
-            <span class="badge bg-info-subtle text-info-emphasis border border-info-subtle">Prototip</span>
-          </div>
-        </div>
-      </div>
+    </footer>
 
-      <!-- Card 3 -->
-      <div class="card border-0 shadow-sm rounded-3">
-        <div class="card-body p-3">
-          <div class="d-flex justify-content-between align-items-center mb-2">
-            <span class="text-primary fw-bold small">IN-2026-033</span>
-            <i class="bi bi-star text-muted fs-5"></i>
-          </div>
-          <span class="badge bg-info-subtle text-info-emphasis mb-2 fw-medium">Sun'iy intellekt</span>
-          <h5 class="card-title fw-bold fs-5 mb-2">O‘zbek tili uchun ovozdan matnga o‘girish xizmati</h5>
-          <p class="card-text text-muted small mb-2">
-            Jamoa: Ovoz.uz · Mustaqil jamoa
-          </p>
-          <p class="card-text text-secondary small mb-3">
-            400 soatlik ochiq nutq korpusi asosida o‘qitilgan model. Lahjalarni hisobga oladi, diktovka uchun API beradi.
-          </p>
-          <div class="d-flex flex-wrap gap-1 mb-3">
-            <span class="border rounded px-2 py-1 bg-light text-secondary small">NLP</span>
-            <span class="border rounded px-2 py-1 bg-light text-secondary small">API</span>
-            <span class="border rounded px-2 py-1 bg-light text-secondary small">Ochiq korpus uchun</span>
-          </div>
-          <div class="d-flex justify-content-between align-items-center pt-2 border-top text-muted small">
-            <span>Toshkent</span>
-            <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle">Bozorda</span>
-          </div>
-        </div>
-      </div>
 
-      <!-- Card 4 -->
-      <div class="card border-0 shadow-sm rounded-3">
-        <div class="card-body p-3">
-          <div class="d-flex justify-content-between align-items-center mb-2">
-            <span class="text-primary fw-bold small">IN-2026-029</span>
-            <i class="bi bi-star-fill text-warning fs-5"></i>
-          </div>
-          <span class="badge bg-info-subtle text-info-emphasis mb-2 fw-medium">Energetika</span>
-          <h5 class="card-title fw-bold fs-5 mb-2">Uy sharoitida biogaz olish uchun kompakt qurilma</h5>
-          <p class="card-text text-muted small mb-2">
-            Jamoa: BioKub · Samarqand davlat universiteti
-          </p>
-          <p class="card-text text-secondary small mb-3">
-            Oshxona chiqindilaridan kuniga 0,8 m³ gaz ishlab chiqaradi. Qishloq xonadonlari uchun, o‘rnatish bir kun oladi.
-          </p>
-          <div class="d-flex flex-wrap gap-1 mb-3">
-            <span class="border rounded px-2 py-1 bg-light text-secondary small">Biogaz</span>
-            <span class="border rounded px-2 py-1 bg-light text-secondary small">Qishloq</span>
-          </div>
-          <div class="d-flex justify-content-between align-items-center pt-2 border-top text-muted small">
-            <span>Samarqand</span>
-            <span class="badge bg-warning-subtle text-warning-emphasis border border-warning-subtle">G‘oya</span>
-          </div>
-        </div>
-      </div>
 
-      <!-- Card 5 -->
-      <div class="card border-0 shadow-sm rounded-3">
-        <div class="card-body p-3">
-          <div class="d-flex justify-content-between align-items-center mb-2">
-            <span class="text-primary fw-bold small">IN-2026-024</span>
-            <i class="bi bi-star text-muted fs-5"></i>
-          </div>
-          <span class="badge bg-info-subtle text-info-emphasis mb-2 fw-medium">Ta'lim</span>
-          <h5 class="card-title fw-bold fs-5 mb-2">Maktab kimyo laboratoriyasi uchun VR modul</h5>
-          <p class="card-text text-muted small mb-2">
-            Jamoa: LabVR · Namangan innovatsiya markazi
-          </p>
-          <p class="card-text text-secondary small mb-3">
-            Reaktiv yetishmaydigan maktablarda 32 ta amaliy tajribani virtual bajarish imkonini beradi.
-          </p>
-          <div class="d-flex flex-wrap gap-1 mb-3">
-            <span class="border rounded px-2 py-1 bg-light text-secondary small">VR</span>
-            <span class="border rounded px-2 py-1 bg-light text-secondary small">Maktab</span>
-            <span class="border rounded px-2 py-1 bg-light text-secondary small">Kimyo</span>
-          </div>
-          <div class="d-flex justify-content-between align-items-center pt-2 border-top text-muted small">
-            <span>Namangan</span>
-            <span class="badge bg-info-subtle text-info-emphasis border border-info-subtle">Prototip</span>
-          </div>
-        </div>
-      </div>
 
-      <!-- Card 6 -->
-      <div class="card border-0 shadow-sm rounded-3">
-        <div class="card-body p-3">
-          <div class="d-flex justify-content-between align-items-center mb-2">
-            <span class="text-primary fw-bold small">IN-2026-019</span>
-            <i class="bi bi-star text-muted fs-5"></i>
-          </div>
-          <span class="badge bg-info-subtle text-info-emphasis mb-2 fw-medium">Agrotexnologiya</span>
-          <h5 class="card-title fw-bold fs-5 mb-2">Issiqxona mikroiqlimini nazorat qiluvchi tizim</h5>
-          <p class="card-text text-muted small mb-2">
-            Jamoa: GreenNode · Andijon qishloq xo‘jaligi instituti
-          </p>
-          <p class="card-text text-secondary small mb-3">
-            Namlik, harorat va CO2 ni o‘lchab shamollatishni avtomatiq boshqaradi. Jihoz narxi 2 mln so‘mdan oshmaydi.
-          </p>
-          <div class="d-flex flex-wrap gap-1 mb-3">
-            <span class="border rounded px-2 py-1 bg-light text-secondary small">IoT</span>
-            <span class="border rounded px-2 py-1 bg-light text-secondary small">Sensor  </span>
-          </div>
-          <div class="d-flex justify-content-between align-items-center pt-2 border-top text-muted small">
-            <span>Andijon</span>
-            <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle">Bozorda</span>
-          </div>
-        </div>
-      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    </div>
 
-    <!-- SHOW MORE BUTTON -->
-    <div class="text-center my-4">
-      <button class="btn btn-outline-secondary bg-white text-dark w-100 py-2 border shadow-sm fw-medium">
-        Yana 12 ta loyihani ko‘rsatish
-      </button>
-    </div>
 
-  </main>
+    <script src="assets/js/main.js"></script>
 
-  <!-- FOOTER -->
-  <footer class="bg-dark text-white-50 text-center py-4 fs-6 border-top border-secondary">
-    <div class="container">
-      <p class="mb-1 text-white fw-medium">
-        <strong>Reyestr</strong> · Yoshlar innovatsion loyihalari bazasi
-      </p>
-      <p class="mb-0 small text-secondary">
-        Ma’lumotlar 2026-yil 1-sentyabr holatiga
-      </p>
-    </div>
-  </footer>
-
-  <!-- 1. Bootstrap 5 JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- 2. Sizning main.js faylingiz ulanishi -->
-  <script src="main.js"></script>
 </body>
+
 </html>
